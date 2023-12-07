@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThemThongTinActivity"
+    android:orientation="vertical"
+    android:layout_margin="26dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Thông Tin Liên Lạc"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:gravity="center"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgAvatar"
+        android:src="@drawable/iconavt"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Họ và Tên: "
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/etTen"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Định Danh:"
+            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/etTDD"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Ngày Sinh: "
+            android:textSize="20dp"/>
+        <EditText
+            android:inputType="number"
+            android:id="@+id/etNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Thêm: "
+            android:textSize="17dp"/>
+        <EditText
+            android:id="@+id/etTTT"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Họ và Tên"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/etId"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Gmail: "
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/etGmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Thêm"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btSua"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Sửa"
+            android:visibility="gone"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</LinearLayout>
